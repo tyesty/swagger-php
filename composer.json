@@ -1,11 +1,11 @@
 {
-  "name": "zircote/swagger-php",
+  "name": "tyesty/swagger-php",
   "type": "library",
   "license": "Apache-2.0",
   "bin": [
     "bin/openapi"
   ],
-  "description": "swagger-php - Generate interactive documentation for your RESTful API using phpdoc annotations",
+  "description": "Fork of swagger-php - Generate interactive documentation for your RESTful API using phpdoc annotations",
   "keywords": [
     "json",
     "rest",
@@ -23,6 +23,10 @@
       "name": "Bob Fanger",
       "email": "bfanger@gmail.com",
       "homepage": "http://bfanger.nl"
+    },
+    {
+      "name": "Tobias Stursberg",
+      "email": "tobias@stursberg.de"
     }
   ],
   "config": {

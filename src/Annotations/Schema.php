@@ -187,12 +187,12 @@ class Schema extends AbstractAnnotation
     /**
      * Can be used to fill enum values through a callback method.
      *
-     * The callback method has to be
+     * The callback method has to be executeable with PHPs call_user_func.
      *
      * @var string
      */
     public $enumCallback = UNDEFINED;
-    
+
     /**
      * A numeric instance is valid against "multipleOf" if the result of the division of the instance by this property's value is an integer.
      *
