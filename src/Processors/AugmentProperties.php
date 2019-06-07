@@ -63,7 +63,6 @@ class AugmentProperties
                 continue;
             }
             if ($property->enumCallback !== UNDEFINED) {
-              var_dump($property);
               $property->enum = array_values(call_user_func($property->enumCallback));
               $property->example = $property->enum[0];
               unset($property->enumCallback);
