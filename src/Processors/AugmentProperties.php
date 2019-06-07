@@ -63,9 +63,9 @@ class AugmentProperties
                 continue;
             }
             if ($property->enumCallback !== UNDEFINED) {
-              $property->enum = array_values(call_user_func($property->enumCallback));
-              $property->example = $property->enum[0];
-              unset($property->enumCallback);
+                $property->enum = array_values(call_user_func($property->enumCallback));
+                $property->example = $property->enum[0];
+                unset($property->enumCallback);
             }
             $comment = str_replace("\r\n", "\n", $context->comment);
             if (preg_match('/@var\s+(?<type>[^\s]+)([ \t])?(?<description>.+)?$/im', $comment, $varMatches)) {
