@@ -1,5 +1,5 @@
 {
-  "name": "tyesty/swagger-php-fork",
+  "name": "tyesty/swagger-php",
   "type": "library",
   "license": "Apache-2.0",
   "bin": [
