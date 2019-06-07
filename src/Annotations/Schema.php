@@ -185,6 +185,15 @@ class Schema extends AbstractAnnotation
     public $enum = UNDEFINED;
 
     /**
+     * Can be used to fill enum values through a callback method.
+     *
+     * The callback method has to be
+     *
+     * @var string
+     */
+    public $enumCallback = UNDEFINED;
+    
+    /**
      * A numeric instance is valid against "multipleOf" if the result of the division of the instance by this property's value is an integer.
      *
      * @var number
