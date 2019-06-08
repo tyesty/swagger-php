@@ -1,10 +1,20 @@
-[![Build Status](https://img.shields.io/travis/zircote/swagger-php/master.svg?style=flat-square)](https://travis-ci.org/zircote/swagger-php)
-[![Total Downloads](https://img.shields.io/packagist/dt/zircote/swagger-php.svg?style=flat-square)](https://packagist.org/packages/zircote/swagger-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/tyesty/swagger-php.svg?style=flat-square)](https://packagist.org/packages/tyesty/swagger-php)
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg?style=flat-square)](LICENSE-2.0.txt)
 
 # swagger-php
 
 Generate interactive [OpenAPI](https://www.openapis.org) documentation for your RESTful API using [doctrine annotations](https://www.doctrine-project.org/projects/doctrine-annotations/en/latest/index.html).
+
+## About this fork
+
+This fork adds the option to determine enum values by specifying an enumCallback attribute.
+
+```php
+/**
+ * @OA\Property(type="string", enumCallback="\My\Class::myMethod")
+ */
+ ```
+ will automatically set the `enum` attribute to the `array_values()` of the array provided by `\MyClass\::myMethod()` method.
 
 ## Features
 
